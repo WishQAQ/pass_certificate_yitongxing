@@ -1,0 +1,41 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/logs/logs",
+		"pages/userCenter/index",
+		"pages/components/card-list/card-list",
+		"pages/components/card-box/card-box"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "疫通行",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#999999", 
+		"selectedColor": "#2D71F6", 
+		"borderStyle": "white", 
+		"list": [
+			{
+				"selectedIconPath": "", 
+				"iconPath": "",  
+				"pagePath": "pages/index/index", 
+				"text": "首页"
+			},
+			{
+				"selectedIconPath": "",
+				"iconPath": "",
+				"pagePath": "pages/logs/logs",
+				"text": "通行证"
+			},
+			{
+				"selectedIconPath": "",
+				"iconPath": "",
+				"pagePath": "pages/userCenter/index",
+				"text": "我的"
+			}
+		]
+	},
+	"style": "v2"
+}

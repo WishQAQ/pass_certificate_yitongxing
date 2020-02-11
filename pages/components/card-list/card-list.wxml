@@ -1,0 +1,4 @@
+<view class="card_list">
+	<slot name="before"></slot>
+  <slot name="after"></slot>
+</view>

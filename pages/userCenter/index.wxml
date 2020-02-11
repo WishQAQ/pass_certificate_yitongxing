@@ -1,0 +1,41 @@
+<!-- 个人中心 -->
+<view calss="user_index">
+	<!-- 用户信息 -->
+	<view class="user_info">
+		<!-- 头像 -->
+		<image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+		<!-- 个人资料 -->
+		<view class="info_box">
+			<!-- 未登录状态 -->
+			<view class="not_login" wx:if="{{!login}}" bindtap="loginBtn">点击注册/登录</view>
+			<!-- 已登录状态 -->
+			<view class="successful_login" wx:else bindtap="loginBtn">
+				<!-- 用户名 -->
+				<view class="user_name">{{userInfo.nickName || '暂无用户名'}}</view>
+				<!-- 用户手机号 -->
+				<view class="user_telphone">暂无手机号</view>
+			</view>
+		</view>
+	</view>
+	<view class="crad-box">
+		<card-list>
+			<image slot="before" class="icon" src="image/userCenter@family.png"></image>
+			<view slot="after" class="text">我的家庭</view>
+		</card-list>
+		<card-list>
+			<image slot="before" class="icon" src="image/userCenter@recording.png"></image>
+			<view slot="after" class="text">我的通行记录</view>
+		</card-list>
+		<card-list class="card-list-bottom">
+			<image slot="before" class="icon" src="image/userCenter@contactUs.png"></image>
+			<view slot="after" class="text">联系我们</view>
+		</card-list>
+	</view>
+
+	<view class="crad-box" wx:if="{{login}}">
+		<card-list class="card-list-bottom">
+			<image slot="before" class="icon" src="image/userCenter@quit.png"></image>
+			<view slot="after" class="text">退出登录</view>
+		</card-list>
+	</view>
+</view>
