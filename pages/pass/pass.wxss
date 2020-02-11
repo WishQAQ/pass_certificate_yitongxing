@@ -1,0 +1,67 @@
+.pass{
+}
+/* 通行证信息盒子 */
+.pass_box{
+	padding: 34rpx 30rpx 100rpx;
+	background: rgba(255, 255, 255, 1)
+}
+/* 小区地址 */
+.pass_address{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20rpx;
+}
+.address_icon{
+	width: 32rpx;
+	height: 32rpx;
+	object-fit: contain;
+	margin-right: 8rpx
+}
+.address_text{
+	font-size:28rpx;
+	color:rgba(7,7,7,1);
+}
+
+/* 通行证状态盒子 */
+.pass_status_box{
+	min-height:256rpx;
+	background:rgba(11,185,122,1);
+	border-radius:10px;
+	display: flex;
+	align-items: center;
+	padding: 56rpx 0 56rpx 40rpx;
+	box-sizing: border-box;
+	margin-bottom: 56rpx;
+}
+.pass_icon{
+	width: 142rpx;
+	height: 142rpx;
+	object-fit: contain;
+	margin-right: 30rpx;
+	flex-shrink: 0
+}
+.pass_info{
+	color:rgba(255,255,255,1);
+}
+.pass_info_name{
+	font-size: 36rpx;
+	margin-bottom: 16rpx
+}
+.pass_info_time{
+	font-size: 24rpx;
+}
+
+/* 二维码 */
+.pass_qr{
+	display: block;
+	width: 362rpx;
+	height: 362rpx;
+	margin: 0 auto;
+	object-fit: contain
+}
+
+/* 通行记录 */
+.arrowBtn{
+	width: 100%;
+	margin-top: 20rpx;
+}

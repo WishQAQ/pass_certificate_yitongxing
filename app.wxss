@@ -8,7 +8,46 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
 /* 根目录样式 */
 page{
 	background:rgba(247,247,247,1);
+}
+
+/* 列表样式 */
+card-list{
+	width: 100%;
+	display: block
+}
+.crad-box{
+	margin-bottom: 20rpx
+}
+.crad-box .card-list-bottom .card_list::after{
+	border-bottom-color: transparent
+}
+/* 图标带左侧文字 */
+.iconBtn.crad-box .icon{
+	width: 32rpx;
+	height: 32rpx;
+	object-fit: contain;
+	margin-right: 20rpx
+}
+.iconBtn.crad-box .text{
+	font-size: 28rpx;
+	color: rgba(7,7,7,1);
+}
+/* 文字带右侧箭头 */
+.arrowBtn.crad-box{
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+}
+.arrowBtn.crad-box .text{
+	font-size: 28rpx;
+	color: rgba(7,7,7,1);
+}
+.arrowBtn.crad-box .icon{
+	width: 32rpx;
+	height: 32rpx;
+	object-fit: contain;
 }

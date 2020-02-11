@@ -1,8 +1,10 @@
 {
 	"pages": [
+		"pages/pass/pass",
+		
 		"pages/index/index",
-		"pages/logs/logs",
 		"pages/userCenter/index",
+		"pages/logs/logs",
 		"pages/components/card-list/card-list",
 		"pages/components/card-box/card-box"
 	],
@@ -13,20 +15,20 @@
 		"navigationBarTextStyle": "black"
 	},
 	"tabBar": {
-		"color": "#999999", 
-		"selectedColor": "#2D71F6", 
-		"borderStyle": "white", 
+		"color": "#999999",
+		"selectedColor": "#2D71F6",
+		"borderStyle": "white",
 		"list": [
 			{
-				"selectedIconPath": "", 
-				"iconPath": "",  
-				"pagePath": "pages/index/index", 
+				"selectedIconPath": "",
+				"iconPath": "",
+				"pagePath": "pages/index/index",
 				"text": "首页"
 			},
 			{
 				"selectedIconPath": "",
 				"iconPath": "",
-				"pagePath": "pages/logs/logs",
+				"pagePath": "pages/pass/pass",
 				"text": "通行证"
 			},
 			{

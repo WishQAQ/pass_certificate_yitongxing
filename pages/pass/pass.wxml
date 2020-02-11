@@ -1,0 +1,29 @@
+<view class="pass">
+	<!-- 通行证信息盒子 -->
+	<view class="pass_box">
+		<!-- 小区地址 -->
+		<view class="pass_address">
+			<image class="address_icon" src="image/pass@address.png"></image>
+			<view class="address_text">南岸区茶园城南家园</view>
+		</view>
+		<!-- 通行证状态盒子 -->
+		<view class="pass_status_box">
+			<image class="pass_icon" src="image/pass@logo.png"></image>
+			<view class="pass_info">
+				<view class="pass_info_name">疫情临时出入凭证</view>
+				<view class="pass_info_time">有效期：2020-02-01至2020-03-1</view>
+			</view>
+		</view>
+		<!-- 二维码 -->
+		<image class="pass_qr" src="image/pass@qr.png"></image>
+	</view>
+
+	<!-- 通行记录 -->
+	<view class="arrowBtn crad-box">
+		<card-list class="card-list-bottom">
+			<view slot="before" class="text">通行记录</view>
+			<image slot="after" class="icon" src=""></image>
+		</card-list>
+	</view>
+
+</view>

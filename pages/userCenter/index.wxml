@@ -7,7 +7,7 @@
 		<!-- 个人资料 -->
 		<view class="info_box">
 			<!-- 未登录状态 -->
-			<view class="not_login" wx:if="{{!login}}" bindtap="loginBtn">点击注册/登录</view>
+			<button class="not_login" wx:if="{{!login}}" bindgetuserinfo="getUserInfo" open-type="getUserInfo">点击注册/登录</button>
 			<!-- 已登录状态 -->
 			<view class="successful_login" wx:else bindtap="loginBtn">
 				<!-- 用户名 -->
@@ -17,7 +17,8 @@
 			</view>
 		</view>
 	</view>
-	<view class="crad-box">
+	<!-- 按钮组 -->
+	<view class="iconBtn crad-box">
 		<card-list>
 			<image slot="before" class="icon" src="image/userCenter@family.png"></image>
 			<view slot="after" class="text">我的家庭</view>
@@ -31,8 +32,8 @@
 			<view slot="after" class="text">联系我们</view>
 		</card-list>
 	</view>
-
-	<view class="crad-box" wx:if="{{login}}">
+	<!-- 退出登录按钮 -->
+	<view class="iconBtn crad-box" wx:if="{{login}}">
 		<card-list class="card-list-bottom">
 			<image slot="before" class="icon" src="image/userCenter@quit.png"></image>
 			<view slot="after" class="text">退出登录</view>

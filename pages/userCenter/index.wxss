@@ -26,7 +26,17 @@
 }
 /* 未登录状态 */
 .not_login{
-	
+	color:rgba(255,255,255,1);
+  margin: unset;
+  padding: unset;
+  background-color: transparent;
+  line-height: unset;
+  height: unset;
+  border-radius: unset;
+  border:none;
+  font-size: 32rpx;
+	font-weight: unset;
+  display: unset;
 }
 /* 已登录状态 */
 .successful_login{
@@ -39,22 +49,4 @@
 /* 用户手机号 */
 .user_telphone{
 	font-size: 24rpx;
-}
-
-/* 列表样式 */
-.crad-box{
-	margin-bottom: 20rpx
-}
-.crad-box .icon{
-	width: 32rpx;
-	height: 32rpx;
-	object-fit: contain;
-	margin-right: 20rpx
-}
-.crad-box .text{
-	font-size: 28rpx;
-	color: rgba(7,7,7,1);
-}
-.crad-box .card-list-bottom .card_list::after{
-	border-bottom-color: transparent
 }
